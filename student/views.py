@@ -43,13 +43,13 @@ def do_update_student(request,roll):
      std_address=request.POST.get("student_address")
      std_phone=request.POST.get("student_phone")
 
-     std = student.objects.get(pk=roll)
-     std.roll=std_roll
-     std.name=std_name
-     std.email=std_email
-     std.address=std_address
-     std.phone=std_phone
-     std.save()
+     stds = student.objects.get(pk=roll)
+     stds.roll=std_roll
+     stds.name=std_name
+     stds.email=std_email
+     stds.address=std_address
+     stds.phone=std_phone
+     stds.save()
 
      return redirect("/student/home")
 

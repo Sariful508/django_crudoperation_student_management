@@ -18,27 +18,27 @@
             <div class = "col-md-6 offset-md-3">
                 <div class = "card bg-info">
                     <div class = "card-body">
-                        <form action ="/student/do-update-student/{{std.id}}" method="POST">
+                        <form action ="/student/do-update-student/{{stds.id}}" method="POST">
                           {% csrf_token %}
                           <div class ="md-3">
                             <label for="roll">Roll</label>
-                            <input name="student_roll" type = "text" id="roll" class ="form-control" placeholder="Enter your Roll" required value="{{std.roll}}">
+                            <input name="student_roll" type = "text" id="roll" class ="form-control" placeholder="Enter your Roll" required value="{{stds.roll}}">
                           </div>
                           <div class="md-3">
                             <label for="name">Name</label>
-                            <input  name="student_name" type="text" id="name" class="form-control" placeholder="Enter your Name" required value="{{std.name}}">
+                            <input  name="student_name" type="text" id="name" class="form-control" placeholder="Enter your Name" required value="{{stds.name}}">
                           </div>
                           <div class="md-3">
                             <label for="email">Email</label>
-                            <input name="student_email" type="text" id="email" class="form-control" placeholder="Enter your Email" required value="{{std.email}}">
+                            <input name="student_email" type="text" id="email" class="form-control" placeholder="Enter your Email" required value="{{stds.email}}">
                           </div>
                           <div class="md-3">
                             <label for="address">Address</label>
-                            <textarea name="student_address" id="address" rows="5" class="form-control" placeholder="Enter your Address" value="{{std.address}}"></textarea>
+                            <textarea name="student_address" id="address" rows="5" class="form-control" placeholder="Enter your Address" value="{{stds.address}}"></textarea>
                           </div>
                           <div class="md-3">
                             <label for="phone">Phone</label>
-                            <input name="student_phone" type="text" id="phone" class="form-control" placeholder="Enter your Phone" value="{{std.phone}}">
+                            <input name="student_phone" type="text" id="phone" class="form-control" placeholder="Enter your Phone" value="{{stds.phone}}">
                           </div>
                           <div class="container text-center my-2">
                             <button class="btn btn-success">Update Student</button>
